@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reproductor</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <style type="text/css">
+  body{
+  margin: 0;
+  padding: 0;
+  background: none;
+  }
+</style>
+<audio class="audio"><source src="https://www.dropbox.com/s/s14pl1awwoaumir/Hall%20of%20Fame.mp3?raw=1"></source></audio>
+<img class="control" src="https://i.imgur.com/nd9nbWj.png">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>$(function(){
+  d = "https://i.imgur.com/nd9nbWj.png";
+  p = "https://i.imgur.com/XANBzZu.png";
+  c = 0;
+  var audio = document.getElementsByClassName('audio');
+  $('.control').click(function(){
+    if(c==0){
+      $(this).attr('src',p);
+      audio[0].play();
+      c++;
+    }
+    else{
+      $(this).attr('src',d);
+      audio[0].pause();
+      c=0;
+    };
+  });
+});</script>
+  
+  
+
+</body>
+
+</html>

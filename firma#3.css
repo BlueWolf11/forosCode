@@ -52,10 +52,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f77a4', end
   cursor: pointer !important;
   margin: 0 auto 10px;
   display: block;
+  transition: all .5s ease-in-out;
 }
 .jf-row{
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0% 0%);
   background: #438ab4;
   width: 50px;
   height: 200px;
+}
+.jackson-f:hover iframe{
+  transition: all .5s ease-in-out;
+  transform: rotate(360deg);
 }

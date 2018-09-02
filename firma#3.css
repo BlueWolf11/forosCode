@@ -44,6 +44,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f77a4', end
   background: url('https://i.imgur.com/EHfwicM.png');
   width: 350px;
   height: 200px;
+  position: relative;
+}
+.jf-bg:after{
+  content: "";
+  display: none;
+  width: 350px;
+  height: 200px;
+  background: url(https://i.imgur.com/t4K9amh.gif);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.jackson-f:hover .jf-bg:after{
+  display: block;
 }
 .jf-play iframe{
   border: none;
@@ -54,13 +68,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f77a4', end
   display: block;
   transition: all .5s ease-in-out;
 }
+.jackson-f:hover iframe{
+  transition: all .5s ease-in-out;
+  transform: rotate(360deg);
+}
 .jf-row{
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0% 0%);
   background: #438ab4;
   width: 50px;
   height: 200px;
+  position: relative;
+  z-index: 1;
 }
-.jackson-f:hover iframe{
-  transition: all .5s ease-in-out;
-  transform: rotate(360deg);
+.jf-hov{
+  margin: -10px auto 0;
+  width: max-content;
+  font-size: 8px;
+  font-family: Assistant;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 5px;
 }

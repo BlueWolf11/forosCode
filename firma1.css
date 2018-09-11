@@ -1,0 +1,65 @@
+.jackson-f > *{
+  box-sizing: border-box;
+}
+.jackson-f{
+  background: url(https://i.imgur.com/EHfwicM.png);
+  width: 350px;
+  height: 200px;
+  margin: 10px auto;
+  outline: 1px solid white;
+  outline-offset: 3px;
+  transition: all .5s ease;
+  overflow: hidden;
+  position: relative;
+  filter: grayscale(.5);
+  transition: all .5s ease;
+}
+.jackson-f:after{
+  content: "";
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://i.imgur.com/t4K9amh.gif);
+  display: none;
+  transition: all .5s ease;
+}
+.jackson-f:hover:after{
+  display: block;
+}
+.jackson-f:hover{
+  filter: grayscale(0);
+}
+.jf-txt{
+  position: absolute;
+  z-index: 1;
+  color: #022120;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: calibri;
+  letter-spacing: 1px;
+  height: 20px;
+  width: 150px;
+  bottom: 11px;
+  line-height: 7px;
+  margin-left: 40px;
+  font-weight: bolder;
+}
+.jackson-f iframe{
+  border: none;
+  display: block;
+  width: 40px;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(0deg)  scale(.5);
+  z-index: 2;
+  transition: all .5s ease;
+}
+.jackson-f:hover iframe{
+  transform: rotate(360deg) scale(.5);
+  transition: all .5s ease;
+}

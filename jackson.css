@@ -1,0 +1,71 @@
+.jackson, .jackson *{
+  box-sizing: border-box;
+}
+.jackson{
+  width: 250px;
+  height: 150px;
+  background: #466587;
+  margin: 5px auto;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #466587;
+  outline-offset: 2px;
+}
+.jackie{
+  transition: all 1s ease-in-out;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100%;
+  transform: scale(.5);
+  position: absolute;
+  left: -25px;
+  top: -30px;
+  z-index: 2;
+  
+}
+.jackie img{
+  transition: all 1s ease-in-out;
+  margin-left: -85px;
+}
+.jackson:hover .jackie{
+  transform: scale(2);
+  left: 30px;
+  width: 170px;
+  height: 170px;
+  
+}
+.jackson:hover img{
+  transform: scale(.5);
+  margin-top: 20px;
+  margin-left: -35px
+}
+.jackie2{
+  width: 150px;
+  height: 150px;
+  background: url(https://i.imgur.com/M9Iw2bn.jpg);
+  position: absolute;
+  left: 100px;
+  border-left: solid 5px #f1f1f1;
+}
+.jackie-txt{
+  position: absolute;
+  z-index: 5;
+  color: #fff;
+  width: 90px;
+  height: 30px;
+  font-size: 6px;
+  text-transform: uppercase;
+  line-height: 7px;
+  font-family: calibri;
+  text-align: center;
+  letter-spacing: 1px;
+  left: 5px;
+  top: 95px;
+}
+.jra{
+  font-size: 15px;
+  margin-top: -4px;
+  display: inline-block;
+}

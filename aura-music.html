@@ -1,0 +1,38 @@
+<style type="text/css">
+  body{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: transparent; 
+  }
+  .control{
+    color: #343ea3;
+    font-size: 30px;
+    text-aling: center;
+  }
+  .fa-play{
+    margin-left: 7px;
+  }
+</style>
+<audio class="audio"><source src="https://www.dropbox.com/s/8qnury76m2j8cg9/How%20you%20love%20me.mp3?raw=1"></source></audio>
+<i class="fas fa-crown control"></i>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<script>$(function(){
+  c = 0;
+  var audio = document.getElementsByClassName('audio');
+  $('.control').click(function(){
+    if(c==0){
+      $(this).removeClass('fa-crown');
+      $(this).addClass('fa-play');
+      audio[0].play();
+      c++;
+    }
+    else{
+      $(this).removeClass('fa-play');
+      $(this).addClass('fa-crown')
+      audio[0].pause();
+      c=0;
+    };
+  });
+});</script>

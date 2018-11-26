@@ -1,0 +1,38 @@
+<style type="text/css">
+  body{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: transparent; 
+  }
+  .control{
+    color: #fff;
+    font-size: 20px;
+    text-aling: center;
+  }
+  .fa-bolt{
+    margin-left: 2px;
+  }
+</style>
+<audio class="audio"><source src="https://www.dropbox.com/s/5l0s2lptmu2ze3m/Rise.mp3?raw=1"></source></audio>
+<i class="fas fa-bolt control"></i>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<script>$(function(){
+  c = 0;
+  var audio = document.getElementsByClassName('audio');
+  $('.control').click(function(){
+    if(c==0){
+      $(this).removeClass('fa-bolt');
+      $(this).addClass('fa-pause');
+      audio[0].play();
+      c++;
+    }
+    else{
+      $(this).removeClass('fa-pause');
+      $(this).addClass('fa-bolt')
+      audio[0].pause();
+      c=0;
+    };
+  });
+});</script>
